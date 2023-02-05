@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Swaqly</string>
+    <string name="login">Login</string>
+    <string name="signUp">Sign Up</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="create_account">Create an Account</string>
+    <string name="add_ur_details_log">Add your details to login</string>
+    <string name="add_ur_details_sign">Add your details to sign up</string>
+    <string name="ur_email">Your Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile No</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forget_password">Forgot your password?</string>
+    <string name="do_not_have">Don\'t have an Account?</string>
+    <string name="already_have">Already have an Account?</string>
+    <string name="or_log_with">or Login With</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="send">Send</string>
+    <string name="forget">forgot Password</string>
+    <string name="forget_details">Please enter your email to receive a\nlink to create a new password via email</string>
+
+</resources>
