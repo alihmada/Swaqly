@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="layout_marginHorizontal">30dp</dimen>
+    <dimen name="layout_marginVertical">60dp</dimen>
+    <dimen name="layout_padding">4dp</dimen>
+    <dimen name="header_text_size">30sp</dimen>
+    <dimen name="header_details_top_margin">12dp</dimen>
+    <dimen name="header_details_text_size">14dp</dimen>
+    <dimen name="layout_margin_top_36">36dp</dimen>
+    <dimen name="layout_margin_top_28">28dp</dimen>
     <dimen name="button_text_size">16sp</dimen>
     <dimen name="button_margin">34dp</dimen>
-    <dimen name="margin_top">28dp</dimen>
     <dimen name="horizontal_padding">34dp</dimen>
     <dimen name="vertical_padding">18dp</dimen>
     <dimen name="corner_size">28dp</dimen>

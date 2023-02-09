@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,7 +24,7 @@
         android:id="@+id/login"
         style="@style/login_create_buttons"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/button_height"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="72dp"
         android:background="@drawable/orange_button"
@@ -43,7 +42,7 @@
         android:id="@+id/create_an_account"
         style="@style/login_create_buttons"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/button_height"
         android:layout_marginBottom="75dp"
         android:background="@drawable/create_button_with_orange_stroke"
         android:text="@string/create_account"

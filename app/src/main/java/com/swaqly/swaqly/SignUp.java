@@ -1,16 +1,16 @@
 package com.swaqly.swaqly;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Objects;
 
 public class SignUp extends AppCompatActivity {
 
@@ -28,9 +28,9 @@ public class SignUp extends AppCompatActivity {
 
             }
 
-                @Override
+            @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (!charSequence.toString().matches("^(?:(?:[a-zA-Zء-ي]{3,10})(?:\\s|$)){1,6}$") && charSequence.toString().length() > 0) {
+                if (!charSequence.toString().matches("^(?:[a-zA-Zء-ي]{3,10}(?:\\s|$)){1,6}$") && charSequence.toString().length() > 0) {
                     nameLayout.setError("Please, enter a valid name");
                 } else {
                     nameLayout.setErrorEnabled(false);
@@ -80,7 +80,7 @@ public class SignUp extends AppCompatActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (!charSequence.toString().matches("^1[0125][0-9]{8}$") && charSequence.toString().length() > 0) {
                     mobileLayout.setError("Please, enter a valid mobile no.");
-                }else{
+                } else {
                     mobileLayout.setErrorEnabled(false);
                 }
             }
@@ -88,6 +88,30 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
 
+            }
+        });
+
+
+        TextInputLayout confirmPasswordLayout = findViewById(R.id.confirm_pass_layout);
+        TextInputEditText eTextConfirmPassword = findViewById(R.id.confirm_pass_text);
+
+        eTextConfirmPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (!editable.toString().equals(Objects.requireNonNull(((TextInputEditText) findViewById(R.id.password_text)).getText()).toString()) && editable.toString().length() > 0) {
+                    confirmPasswordLayout.setError("Please, there is no match");
+                } else {
+                    confirmPasswordLayout.setErrorEnabled(false);
+                }
             }
         });
 
