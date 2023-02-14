@@ -1,4 +1,4 @@
-package com.swaqly.swaqly;
+package com.swaqly.swaqly.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.swaqly.swaqly.R;
+import com.swaqly.swaqly.services.SignUpService;
 
 import java.util.Objects;
 
@@ -91,9 +93,13 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
+        TextInputEditText eTextAddress = findViewById(R.id.address_text);
+
+        TextInputEditText eTextPassword = findViewById(R.id.password_text);
 
         TextInputLayout confirmPasswordLayout = findViewById(R.id.confirm_pass_layout);
         TextInputEditText eTextConfirmPassword = findViewById(R.id.confirm_pass_text);
+
 
         eTextConfirmPassword.addTextChangedListener(new TextWatcher() {
             @Override
@@ -107,7 +113,7 @@ public class SignUp extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                if (!editable.toString().equals(Objects.requireNonNull(((TextInputEditText) findViewById(R.id.password_text)).getText()).toString()) && editable.toString().length() > 0) {
+                if (!editable.toString().equals(Objects.requireNonNull(eTextPassword.getText()).toString()) && editable.toString().length() > 0) {
                     confirmPasswordLayout.setError("Please, there is no match");
                 } else {
                     confirmPasswordLayout.setErrorEnabled(false);
@@ -119,5 +125,19 @@ public class SignUp extends AppCompatActivity {
             Intent intent = new Intent(getBaseContext(), Login.class);
             startActivity(intent);
         });
+
+        findViewById(R.id.sign_up).setOnClickListener(view -> {
+            SignUpService signUpService = new SignUpService(this);
+            signUpService.execute
+            (
+                Objects.requireNonNull(eTextName.getText()).toString(),
+                Objects.requireNonNull(eTextEmail.getText()).toString(),
+                Objects.requireNonNull(eTextMobile.getText()).toString(),
+                Objects.requireNonNull(eTextAddress.getText()).toString(),
+                Objects.requireNonNull(eTextPassword.getText()).toString(),
+                Objects.requireNonNull(eTextConfirmPassword.getText()).toString()
+            );
+        });
     }
+
 }

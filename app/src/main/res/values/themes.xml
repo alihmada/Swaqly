@@ -32,8 +32,12 @@
     </style>
 
     <style name="scroll_view_style">
-        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/layout_marginHorizontal</item>
-        <item name="android:layout_marginVertical" tools:targetApi="o">@dimen/layout_marginVertical</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">
+            @dimen/layout_marginHorizontal
+        </item>
+        <item name="android:layout_marginVertical" tools:targetApi="o">
+            @dimen/layout_marginVertical
+        </item>
         <item name="android:padding">@dimen/layout_padding</item>
         <item name="android:scrollbars">none</item>
         <item name="android:layout_gravity">center</item>
@@ -51,11 +55,11 @@
         <item name="android:fontFamily">@font/metropolis_medium</item>
         <item name="android:textSize">@dimen/header_details_text_size</item>
     </style>
-    
+
     <style name="header_details" parent="text_view_for_details">
         <item name="android:layout_marginTop">@dimen/header_details_top_margin</item>
     </style>
-    
+
     <style name="text_input_layout">
         <item name="boxBackgroundColor">?attr/colorPrimaryContainer</item>
         <item name="boxBackgroundMode">outline</item>

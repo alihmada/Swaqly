@@ -1,11 +1,13 @@
-package com.swaqly.swaqly;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.swaqly.swaqly.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.swaqly.swaqly.R;
 
 public class splash extends AppCompatActivity {
 

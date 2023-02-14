@@ -11,7 +11,7 @@
     <string name="password">Password</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
-    <string name="mobile">Mobile No</string>
+    <string name="mobile">Mobile No.</string>
     <string name="address">Address</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="forget_password">Forgot your password?</string>
@@ -20,7 +20,7 @@
     <string name="or_log_with">or Login With</string>
     <string name="sign_up">Sign Up</string>
     <string name="send">Send</string>
-    <string name="forget">forgot Password</string>
+    <string name="forget">Forgot Password</string>
     <string name="forget_details">Please enter your email to receive a\nlink to create a new password via email</string>
 
 </resources>

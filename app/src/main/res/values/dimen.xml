@@ -6,7 +6,7 @@
     <dimen name="layout_padding">4dp</dimen>
     <dimen name="header_text_size">30sp</dimen>
     <dimen name="header_details_top_margin">12dp</dimen>
-    <dimen name="header_details_text_size">14dp</dimen>
+    <dimen name="header_details_text_size">14sp</dimen>
     <dimen name="layout_margin_top_36">36dp</dimen>
     <dimen name="layout_margin_top_28">28dp</dimen>
     <dimen name="button_text_size">16sp</dimen>

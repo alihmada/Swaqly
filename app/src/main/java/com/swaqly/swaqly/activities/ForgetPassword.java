@@ -1,23 +1,21 @@
-package com.swaqly.swaqly;
+package com.swaqly.swaqly.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.swaqly.swaqly.R;
 
-public class Login extends AppCompatActivity {
+public class ForgetPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_forget_password);
 
         TextInputLayout emailLayout = findViewById(R.id.email_layout);
         TextInputEditText eTextEmail = findViewById(R.id.email_text);
@@ -25,6 +23,7 @@ public class Login extends AppCompatActivity {
         eTextEmail.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
             }
 
             @Override
@@ -41,17 +40,6 @@ public class Login extends AppCompatActivity {
 
             }
         });
-
-        findViewById(R.id.sign_up).setOnClickListener(view -> {
-            Intent intent = new Intent(getBaseContext(), SignUp.class);
-            startActivity(intent);
-        });
-
-        findViewById(R.id.forget_password).setOnClickListener(view -> {
-            Intent intent = new Intent(getBaseContext(), ForgetPassword.class);
-            startActivity(intent);
-        });
-
 
     }
 }

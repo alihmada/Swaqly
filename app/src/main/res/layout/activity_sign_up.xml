@@ -5,7 +5,7 @@
     style="@style/scroll_view_style"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".activities.SignUp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

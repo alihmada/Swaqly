@@ -1,9 +1,11 @@
-package com.swaqly.swaqly;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.swaqly.swaqly.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.swaqly.swaqly.R;
 
 public class LoginCreate extends AppCompatActivity {
 
