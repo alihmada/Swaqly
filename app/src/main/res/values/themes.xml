@@ -111,4 +111,27 @@
         <item name="android:cursorVisible">true</item>
     </style>
 
+    <style name="card_view">
+        <item name="android:layout_height">20dp</item>
+        <item name="cardBackgroundColor">@color/platinum</item>
+        <item name="cardCornerRadius">25dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="image_view">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:src">@drawable/done</item>
+    </style>
+
+    <style name="text_view_vrefication">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
 </resources>

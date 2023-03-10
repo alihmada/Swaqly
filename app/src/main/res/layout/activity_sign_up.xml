@@ -133,6 +133,113 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/pass_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_pass_layout"
+            app:layout_constraintEnd_toEndOf="@+id/password_layout"
+            app:layout_constraintStart_toStartOf="@+id/password_layout"
+            app:layout_constraintTop_toBottomOf="@+id/password_layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/chars"
+                    android:layout_width="20dp"
+                    style="@style/card_view">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        style="@style/image_view" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/text_view_vrefication"
+                    android:text="@string/char_8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/uppercase"
+                    android:layout_width="20dp"
+                    style="@style/card_view">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        style="@style/image_view" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/text_view_vrefication"
+                    android:text="@string/minumum_one_upper" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/numbers"
+                    android:layout_width="20dp"
+                    style="@style/card_view">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        style="@style/image_view" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/text_view_vrefication"
+                    android:text="@string/min_one_num" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/symbols"
+                    android:layout_width="20dp"
+                    style="@style/card_view">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        style="@style/image_view" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/text_view_vrefication"
+                    android:text="@string/min_one_special" />
+            </LinearLayout>
+
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/confirm_pass_layout"
             style="@style/password_text_input_layout_with_top_margin_28"
@@ -140,7 +247,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password_layout">
+            app:layout_constraintTop_toBottomOf="@+id/pass_verification">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/confirm_pass_text"

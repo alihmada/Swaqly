@@ -100,4 +100,9 @@
         <item name="fontFamily">@font/metropolis_regular</item>
         <item name="android:cursorVisible">true</item>
     </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
 </resources>

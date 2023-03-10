@@ -26,4 +26,11 @@
     <color name="red">#FF0000</color>
     <color name="ups_dell_red">#B00020</color>
     <color name="cadet">#546E7A</color>
+    <color name="platinum">#DCDCDC</color>
+    <color name="green">#00F70C</color>
+    <color name="colorSuccess">#4BB543</color>
+    <color name="colorWarning">#FFCC00</color>
+    <color name="colorNeutral">#434343</color>
+    <color name="colorError">#CC0000</color>
+    <color name="colorTextPrimary">#212121</color>
 </resources>
